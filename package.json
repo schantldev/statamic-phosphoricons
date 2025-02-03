@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "export": "rm -rf assets && cp -r node_modules/@phosphor-icons/core/assets .",
+    "rename": "npm run r-bold && npm run r-duotone && npm run r-fill && npm run r-fill && npm run r-light && npm run r-regular && npm run r-thin",
+    "r-bold": "find assets -iname \"*-bold.svg\" -exec rename -d -bold.svg -a .svg '{}' \\;",
+    "r-duotone": "find assets -iname \"*-duotone.svg\" -exec rename -d -duotone.svg -a .svg '{}' \\;",
+    "r-fill": "find assets -iname \"*-fill.svg\" -exec rename -d -fill.svg -a .svg '{}' \\;",
+    "r-light": "find assets -iname \"*-light.svg\" -exec rename -d -light.svg -a .svg '{}' \\;",
+    "r-regular": "find assets -iname \"*-regular.svg\" -exec rename -d -regular.svg -a .svg '{}' \\;",
+    "r-thin": "find assets -iname \"*-thin.svg\" -exec rename -d -thin.svg -a .svg '{}' \\;"
+  },
+  "dependencies": {
+    "@phosphor-icons/core": "^2.1.1"
+  }
+}

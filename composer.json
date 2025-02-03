@@ -1,0 +1,34 @@
+{
+  "name": "schantldev/statamic-phosphoricons",
+  "autoload": {
+    "psr-4": {
+      "SchantlDev\\StatamicPhosphoricons\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "SchantlDev\\StatamicPhosphoricons\\Tests\\": "tests"
+    }
+  },
+  "require": {
+    "statamic/cms": "^5.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "pixelfear/composer-dist-plugin": true
+    }
+  },
+  "extra": {
+    "statamic": {
+      "name": "Statamic Phosphoricons",
+      "description": "Statamic Phosphoricons addon"
+    },
+    "laravel": {
+      "providers": [
+        "SchantlDev\\StatamicPhosphoricons\\ServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
