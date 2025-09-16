@@ -35,7 +35,7 @@ class ServiceProvider extends AddonServiceProvider
                 }
             }
 
-            Sets::useIcons(sprintf('%s/%s', resource_path('svg/phosphoricons'), config('phosphoricons.variant', 'regular')));
+            Sets::useIcons('Phosphoricons', sprintf('%s/%s', resource_path('svg/phosphoricons'), config('phosphoricons.variant', 'regular')));
         }
     }
 }
