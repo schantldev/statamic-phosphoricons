@@ -28,7 +28,7 @@ Whenever the CP offers you to choose an icon, for example in in the blueprint bu
 ### Usage with the ``Icon`` fieldtype
 For usage in combination with the ``Icon`` fieldtype, ensure that you set the ``directory`` and ``folder`` options accordingly within the selection section.
 
-The directory should be set to: ``resources/svg/phosphoricons/``.
+The directory should be set to: ``resources/svg/phosphoricons``.
 The folder to one of the variants like ``regular``, ``thin``, ``light``, ``bold``, ``duotone`` or ``fill``. Optionally, you can append the variant to the directory above, leaving the folder option empty.
 
 <img alt="Image showing a screenshot of the selection section, prefilled with the Phosphoricons folder and the light variant." src="https://github.com/user-attachments/assets/3b594f19-d03d-4246-aa2f-503c966db9da" />
