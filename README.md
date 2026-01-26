@@ -17,7 +17,7 @@ You can install this addon via Composer:
 composer require schantldev/statamic-phosphoricons
 ```
 
-To set a different variant than the default `light` variant, publish the `phosphoricons.php` configuration file using `php artisan vendor:publish --tag phosphoricons-config` and set a different variant instead.
+To set a different variant than the default `light` variant, publish the `phosphoricons.php` configuration file using `php artisan vendor:publish --tag phosphoricons-config` and set a different variant instead. Optionally, you can disable the usage as set icons, by setting the variant to ``null``. The default Statamic icons will then be used instead.
 
 By default, the addon will symlink all the icons from the vendor folder. If you have concerns doing so, feel free to publish all icons (over 9,000 SVGs) by running `php artisan vendor:publish --tag phosphoricons-assets`.
 
