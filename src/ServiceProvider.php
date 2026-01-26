@@ -35,7 +35,12 @@ class ServiceProvider extends AddonServiceProvider
                 }
             }
 
-            Sets::useIcons('Phosphoricons', sprintf('%s/%s', resource_path('svg/phosphoricons'), config('phosphoricons.variant', 'regular')));
+            collect(['thin', 'light', 'regular', 'bold', 'fill', 'duotone'])
+                ->each(fn($variant) => Icon::register("phosphoricons/$variant", resource_path("svg/phosphoricons/$variant")));
+
+            if ($variant = config('phosphoricons.variant', null)) {
+                Sets::useIcons("phosphoricons/$variant");
+            }
         }
     }
 }
