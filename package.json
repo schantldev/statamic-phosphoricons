@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "update": "npm run export && npm run rename",
     "export": "rm -rf assets && cp -r node_modules/@phosphor-icons/core/assets .",
     "rename": "npm run r-bold && npm run r-duotone && npm run r-fill && npm run r-fill && npm run r-light && npm run r-regular && npm run r-thin",
     "r-bold": "find assets -iname \"*-bold.svg\" -exec rename -d -bold.svg -a .svg '{}' \\;",
