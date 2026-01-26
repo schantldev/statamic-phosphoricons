@@ -4,6 +4,7 @@ namespace SchantlDev\StatamicPhosphoricons;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
+use Statamic\Facades\Icon; 
 use Statamic\Fieldtypes\Sets;
 use Statamic\Providers\AddonServiceProvider;
 
